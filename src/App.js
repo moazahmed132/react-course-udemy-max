@@ -3,23 +3,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    /* return (
+        <div className="App" >
+            <h1 > i am a react app </h1>
+        </div >
+    );
+    ); */
+    React.createElement('div', { className: 'App' }, React.createElement('h1', null, 'I am a react app ya moaz')));
 }
 
-export default App;
+
+
+export default App; 
