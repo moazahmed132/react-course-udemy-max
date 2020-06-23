@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
-import Radium from 'radium';
+import Radium, { StyleRoot } from 'radium';
 
 class App extends Component {
   state = {
@@ -61,7 +61,9 @@ class App extends Component {
     let persons = null;
 
     if (this.state.showPersons) {
+
       persons = (
+
         <div>
           {this.state.persons.map((person, index) => {
             return <Person
@@ -112,15 +114,18 @@ class App extends Component {
 
 
     return (
-      <div className="App" >
-        <h1 className={classes.join(' ')}> i am a react app </h1>
-        <button
-          style={style}
-          onClick={this.togglePersonsHandler}>Switch Names</button>
+      <StyleRoot>
+        <div className="App" >
+          <h1 className={classes.join(' ')}> i am a react app </h1>
+          <button
+            style={style}
+            onClick={this.togglePersonsHandler}>Switch Names</button>
 
-        {persons}
+          {persons}
 
-      </div >
+        </div >
+      </StyleRoot>
+
     );
     /* return React.createElement('div', { className: 'App' }, React.createElement('h1', null, 'I am a react app ya moaz')); */
   }
