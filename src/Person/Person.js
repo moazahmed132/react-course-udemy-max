@@ -14,11 +14,11 @@ text-align: center;
 `;
 
 const Person = (props) => {
-  const style = {
+  /* const style = {
     '@media (min-width: 500px)': {
       width: '450px'
     }
-  }
+  } */
 
   return (
     <StyledDiv>
