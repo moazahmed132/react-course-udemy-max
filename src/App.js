@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
-import Radium, { StyleRoot } from 'radium';
 
 class App extends Component {
   state = {
     persons: [
-      { id: 1341, name: 'Max', age: 28 },
+      { id: 1341, name: 'Maxi', age: 28 },
       { id: 1349, name: 'Dou', age: 24 },
       { id: 1348, name: 'sara', age: 21 }
     ],
@@ -114,21 +113,19 @@ class App extends Component {
 
 
     return (
-      <StyleRoot>
-        <div className="App" >
-          <h1 className={classes.join(' ')}> i am a react app </h1>
-          <button
-            style={style}
-            onClick={this.togglePersonsHandler}>Switch Names</button>
+      <div className="App" >
+        <h1 className={classes.join(' ')}> i am a react app </h1>
+        <button
+          style={style}
+          onClick={this.togglePersonsHandler}>Switch Names</button>
 
-          {persons}
+        {persons}
 
-        </div >
-      </StyleRoot>
+      </div >
 
     );
     /* return React.createElement('div', { className: 'App' }, React.createElement('h1', null, 'I am a react app ya moaz')); */
   }
 }
 
-export default Radium(App)
+export default App 
