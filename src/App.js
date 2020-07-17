@@ -23,9 +23,10 @@ color: white;
 class App extends Component {
   state = {
     persons: [
-      { id: 1341, name: 'Maxi', age: 28 },
+      { id: 1341, name: 'Maxi', age: 27 },
       { id: 1349, name: 'Dou', age: 24 },
       { id: 1348, name: 'sara', age: 21 }
+
     ],
     showPersons: false
   }
